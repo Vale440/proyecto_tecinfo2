@@ -1,0 +1,77 @@
+body {
+    background-color: #ADD8E6; /* Azul claro */
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007bff; /* Un azul más oscuro para el encabezado */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #f8f9fa; /* Un gris claro para el menú */
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+#portada {
+    text-align: center;
+    padding: 20px;
+}
+
+#portada h1 {
+    color: #007bff;
+}
+
+#portada img {
+    max-width: 300px; /* Ajusta el tamaño de la imagen según necesites */
+    height: auto;
+    margin: 10px 0;
+    border-radius: 5px; /* Opcional: para bordes redondeados */
+}
+
+#portada ul {
+    list-style: none;
+    padding: 0;
+}
+
+#portada li {
+    margin-bottom: 5px;
+}
+
+#miBoton {
+    background-color: #28a745; /* Un color llamativo para el botón */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+#miBoton:hover {
+    background-color: #1e7e34; /* Un tono más oscuro al pasar el ratón */
+}

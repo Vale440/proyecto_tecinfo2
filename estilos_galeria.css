@@ -1,0 +1,24 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Crea una cuadrícula adaptable */
+    gap: 15px; /* Espacio entre las imágenes */
+}
+
+.galeria img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer; /* Indica que las imágenes son clickeables */
+    transition: transform 0.3s ease-in-out; /* Animación suave al hacer hover */
+}
+
+.galeria img:hover {
+    transform: scale(1.05); /* Ligeramente más grande al pasar el ratón */
+}
