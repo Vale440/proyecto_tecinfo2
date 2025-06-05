@@ -1,0 +1,79 @@
+/* Colores Neutros Inspirados en el Vintage */
+:root {
+    --color-neutro-claro: #F5F5DC; /* Beige claro */
+    --color-neutro-medio: #D3D3D3; /* Gris claro */
+    --color-neutro-oscuro: #5A5A5A; /* Gris oscuro */
+    --color-texto: #333333; /* Gris casi negro */
+    --color-enlace: #8B4513; /* Marrón sepia para enlaces */
+    --color-enlace-hover: #A0522D; /* Marrón más oscuro al pasar el ratón */
+}
+
+/* Estilos Generales */
+body {
+    font-family: 'Georgia', serif; /* Fuentes con serifa suelen dar un toque vintage */
+    background-color: var(--color-neutro-claro);
+    color: var(--color-texto);
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center; /* Centra el contenido horizontalmente */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--color-neutro-medio);
+}
+
+h1 {
+    font-size: 2.5em;
+    color: var(--color-neutro-oscuro);
+    text-transform: uppercase; /* Opcional: para un toque más clásico */
+    letter-spacing: 2px;
+}
+
+main {
+    flex-grow: 1; /* Permite que el main ocupe el espacio disponible */
+    max-width: 800px; /* Limita el ancho del contenido */
+    width: 100%;
+    background-color: white; /* Un fondo blanco o ligeramente crema para el contenido */
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sutil sombra */
+    border-radius: 8px; /* Bordes ligeramente redondeados */
+}
+
+.about-us p {
+    margin-bottom: 1em;
+    font-size: 1.1em;
+}
+
+a {
+    color: var(--color-enlace);
+    text-decoration: none; /* Quitar subrayado por defecto */
+    border-bottom: 1px dashed var(--color-enlace); /* Subrayado punteado vintage */
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+a:hover {
+    color: var(--color-enlace-hover);
+    border-color: var(--color-enlace-hover);
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 0;
+    border-top: 1px solid var(--color-neutro-medio);
+    color: var(--color-neutro-oscuro);
+    font-size: 0.9em;
+}
+
+/* Ideas para elementos vintage adicionales */
+/* Puedes buscar fuentes "vintage" o "serif" en Google Fonts (ej. 'Lora', 'Playfair Display') */
+/* Aplicar text-shadow sutil a los títulos para un efecto 3D vintage */
+/* Utilizar patrones de fondo sutiles (papel viejo, textura de lino) */
+/* Bordes o marcos decorativos alrededor de secciones */
