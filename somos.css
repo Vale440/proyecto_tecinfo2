@@ -1,79 +1,91 @@
-/* Colores Neutros Inspirados en el Vintage */
-:root {
-    --color-neutro-claro: #F5F5DC; /* Beige claro */
-    --color-neutro-medio: #D3D3D3; /* Gris claro */
-    --color-neutro-oscuro: #5A5A5A; /* Gris oscuro */
-    --color-texto: #333333; /* Gris casi negro */
-    --color-enlace: #8B4513; /* Marrón sepia para enlaces */
-    --color-enlace-hover: #A0522D; /* Marrón más oscuro al pasar el ratón */
-}
+/* Importa una fuente que sea amigable y legible, por ejemplo, de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;400;700&display=swap');
 
-/* Estilos Generales */
 body {
-    font-family: 'Georgia', serif; /* Fuentes con serifa suelen dar un toque vintage */
-    background-color: var(--color-neutro-claro);
-    color: var(--color-texto);
-    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    align-items: center; /* Centra el contenido horizontalmente */
+    padding: 0;
+    background-color: #e0f2f7; /* Un azul claro que evoca el agua */
+    color: #333;
+    line-height: 1.6;
+    background-image: url('https://source.unsplash.com/random/1920x1080/?underwater,oceanlife'); /* Imagen de fondo relacionada con el océano */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 header {
+    background-color: rgba(0, 150, 136, 0.8); /* Un verde azulado oscuro, semi-transparente */
+    color: white;
+    padding: 2rem 0;
     text-align: center;
-    margin-bottom: 40px;
-    padding: 20px 0;
-    border-bottom: 1px solid var(--color-neutro-medio);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-h1 {
-    font-size: 2.5em;
-    color: var(--color-neutro-oscuro);
-    text-transform: uppercase; /* Opcional: para un toque más clásico */
-    letter-spacing: 2px;
+header h1 {
+    font-family: 'Pacifico', cursive; /* Una fuente más "creativa" para el título */
+    font-size: 3.5rem;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 main {
-    flex-grow: 1; /* Permite que el main ocupe el espacio disponible */
-    max-width: 800px; /* Limita el ancho del contenido */
-    width: 100%;
-    background-color: white; /* Un fondo blanco o ligeramente crema para el contenido */
-    padding: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sutil sombra */
-    border-radius: 8px; /* Bordes ligeramente redondeados */
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente para el contenido */
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
-.about-us p {
-    margin-bottom: 1em;
-    font-size: 1.1em;
+.quienes-somos-texto p {
+    font-size: 1.2rem;
+    color: #004d40; /* Un verde oscuro para el texto */
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-left: 5px solid #009688; /* Un borde decorativo */
+    background-color: #e0f2f7;
+    border-radius: 5px;
 }
 
-a {
-    color: var(--color-enlace);
-    text-decoration: none; /* Quitar subrayado por defecto */
-    border-bottom: 1px dashed var(--color-enlace); /* Subrayado punteado vintage */
-    transition: color 0.3s ease, border-color 0.3s ease;
+.recursos {
+    margin-top: 3rem;
 }
 
-a:hover {
-    color: var(--color-enlace-hover);
-    border-color: var(--color-enlace-hover);
+.recursos p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.boton-canva {
+    display: inline-block;
+    background-color: #00bcd4; /* Un azul cian vibrante */
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 50px; /* Bordes redondeados para un efecto de botón */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.boton-canva:hover {
+    background-color: #00acc1; /* Un tono un poco más oscuro al pasar el mouse */
+    transform: translateY(-3px); /* Pequeño efecto de elevación */
+}
+
+.boton-canva:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 footer {
     text-align: center;
-    margin-top: 40px;
-    padding: 20px 0;
-    border-top: 1px solid var(--color-neutro-medio);
-    color: var(--color-neutro-oscuro);
-    font-size: 0.9em;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    background-color: rgba(0, 77, 64, 0.7); /* Un verde azulado muy oscuro, semi-transparente */
+    color: white;
+    font-size: 0.9rem;
 }
-
-/* Ideas para elementos vintage adicionales */
-/* Puedes buscar fuentes "vintage" o "serif" en Google Fonts (ej. 'Lora', 'Playfair Display') */
-/* Aplicar text-shadow sutil a los títulos para un efecto 3D vintage */
-/* Utilizar patrones de fondo sutiles (papel viejo, textura de lino) */
-/* Bordes o marcos decorativos alrededor de secciones */
